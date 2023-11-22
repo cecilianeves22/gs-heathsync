@@ -1,2 +1,4 @@
-package br.com.fiap.gshealthsync.dto;public class LoginResponseDto {
+package br.com.fiap.gshealthsync.dto;
+
+public record LoginResponseDto (String token){
 }
