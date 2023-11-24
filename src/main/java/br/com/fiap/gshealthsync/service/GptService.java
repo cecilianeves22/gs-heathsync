@@ -24,7 +24,7 @@ public class GptService {
     public static Object postMessage(SolicitacaoDto solicitacaoDto){
         try{
             ArrayList<MessageModel> messages = new ArrayList<MessageModel>();
-            messages.add(new MessageModel("user", "Desejo um cardápio saudável com base nas minhas informações de peso:" + solicitacaoDto.getNr_peso() + ", altura:" + solicitacaoDto.getNr_altura() + ", restrição " + solicitacaoDto.getNm_restricao() + ", dias da semana" + solicitacaoDto.getNr_dias_semana() + ", dica " + solicitacaoDto.getDs_dica() + ". Simule um cardápio de forma saudável  e que de sustância com esses dados e me coloque uma dica durante a semana"));
+            messages.add(new MessageModel("user", "Desejo um cardápio saudável com base nas minhas informações de peso:" + solicitacaoDto.getNr_peso() + ", altura:" + solicitacaoDto.getNr_altura() + ", restrição " + solicitacaoDto.getNm_restricao() + ", dias da semana" + solicitacaoDto.getNr_dias_semana() + ", dica " + solicitacaoDto.getDs_dica() + ". Simule um cardápio de forma saudável  e que de sustância com esses dados e me coloque uma dica durante a semana. Não esqueça de colocar a atividade física"));
             messages.add(new MessageModel("system", "gere um cardapio seguindo esse modelo de JSON {\"solicitacao\":\"\",\"cardapio\":[{\"semana\":\"\",\"cafe\":\"\",\"almoco\":\"\",\"lanche\":\"\",\"janta\":\"\"}],\"atividade\":[{\"tipo\":\"\",\"descricao\":\"\",\"quantidade\":\"\",\"tempo\":\"\"}],\"dica\":[\"\"],\"dica\":[{\"descricao\":\"\"}]}."));
             GptRequest gptRequest = new GptRequest();
             gptRequest.setModel("gpt-3.5-turbo");

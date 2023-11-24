@@ -5,6 +5,8 @@ import br.com.fiap.gshealthsync.model.UsuarioModel;
 import br.com.fiap.gshealthsync.service.UsuarioService;
 import jakarta.validation.Valid;
 import org.springframework.beans.BeanUtils;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -36,8 +38,9 @@ public class UsuarioController {
 
 
     @GetMapping
-    public ResponseEntity<List<UsuarioModel>> getAllUsuarios() {
-        return ResponseEntity.status(HttpStatus.OK).body(usuarioService.findAll());
+    public ResponseEntity<Page<UsuarioModel>> getAllUsuarios(Pageable pageable) {
+        Page<UsuarioModel> usuarios = usuarioService.findAll(pageable);
+        return ResponseEntity.status(HttpStatus.OK).body(usuarios);
     }
 
     @GetMapping("/{id}")

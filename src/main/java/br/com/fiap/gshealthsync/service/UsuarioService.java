@@ -4,6 +4,8 @@ import br.com.fiap.gshealthsync.model.UsuarioModel;
 import br.com.fiap.gshealthsync.repositories.UsuarioRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -28,8 +30,8 @@ public class UsuarioService {
         }
     }
 
-    public List<UsuarioModel> findAll() {
-        return usuarioRepository.findAll();
+    public Page<UsuarioModel> findAll(Pageable pageable) {
+        return usuarioRepository.findAll(pageable);
     }
 
     public Optional<UsuarioModel> findById(long id) {

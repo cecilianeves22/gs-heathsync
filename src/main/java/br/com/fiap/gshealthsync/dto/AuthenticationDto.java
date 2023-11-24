@@ -1,6 +1,6 @@
 package br.com.fiap.gshealthsync.dto;
 
-public record AuthenticationDto (String login, String password){
+public record AuthenticationDto (String ds_email, String ds_senha){
 
 
 
