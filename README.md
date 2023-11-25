@@ -3,11 +3,17 @@
 ### Link Pitch
 [Pitch - Digital Business](https://youtu.be/lur6HEaJTy4)
 
+------------
+
 ### Link Deploy em Nuvem (Vídeo) 
 [Deploy - Digital Business](https://youtu.be/-6uvFp3yDv8?si=8VE1joHDtdNxjraL)
 
+------------
+
 ### Documentação HealthSync (PDF Pitch) 
 [PDF Pitch](https://github.com/cecilianeves22/gs-heathsync/blob/master/HealthSync.pdf)
+
+----------
 
 ### Json para testes (Deploy/API)
 #### O deploy foi realizado via Pipeline 
