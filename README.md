@@ -11,7 +11,7 @@
 ------------
 
 ### Link Deploy em Nuvem (Vídeo) 
-[Deploy - Digital Business](https://youtu.be/-6uvFp3yDv8?si=8VE1joHDtdNxjraL)
+[Deploy - Digital Business](https://youtu.be/-6uvFp3yDv8)
 
 ------------
 
