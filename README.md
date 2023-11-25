@@ -7,6 +7,8 @@
 [Deploy - Digital Business](https://youtu.be/-6uvFp3yDv8?si=8VE1joHDtdNxjraL)
 
 ### Json para testes (Deploy/API)
+#### O deploy foi realizado via Pipeline 
+
 - URL:  https://healthsync-gs.azurewebsites.net
 
 - POST (register)
