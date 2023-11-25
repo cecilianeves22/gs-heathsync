@@ -1,4 +1,9 @@
-# gs-heathsync
+# HeathSync
+## Integrantes do grupo: 
+- Carol Groudomihos RM95078
+- Cecilia Oliveira Neves RM93953
+- Guilherme Coletoo RM93818
+
 
 ### Link Pitch
 [Pitch - Digital Business](https://youtu.be/lur6HEaJTy4)
