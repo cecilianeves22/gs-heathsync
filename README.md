@@ -20,6 +20,9 @@
 
 ----------
 
+### Link Expo (Front) 
+[Front](https://snack.expo.dev/@cecilianeves/healthsync-gs)
+
 ### Json para testes (Deploy/API)
 #### O deploy foi realizado via Pipeline 
 
