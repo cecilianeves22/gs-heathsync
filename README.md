@@ -6,14 +6,14 @@
 ### Link Deploy em Nuvem (Vídeo) 
 [Deploy - Digital Business](https://youtu.be/-6uvFp3yDv8?si=8VE1joHDtdNxjraL)
 
+### Documentação HealthSync (PDF Pitch) 
+[PDF Pitch](https://github.com/cecilianeves22/gs-heathsync/blob/master/HealthSync.pdf)
+
 ### Json para testes (Deploy/API)
 #### O deploy foi realizado via Pipeline 
 
 ### Documentação Deploy
 [Deploy pdf](https://github.com/cecilianeves22/gs-heathsync/blob/master/HealthSync_DevOps.pdf)
-
-### Documentação HealthSync (PDF Pitch) 
-[PDF Pitch](https://github.com/cecilianeves22/gs-heathsync/blob/master/HealthSync.pdf)
 
 - URL:  https://healthsync-gs.azurewebsites.net
 
