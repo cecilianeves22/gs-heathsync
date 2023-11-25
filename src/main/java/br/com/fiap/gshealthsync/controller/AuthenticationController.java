@@ -10,6 +10,8 @@ import br.com.fiap.gshealthsync.repositories.UserAuthRepository;
 import br.com.fiap.gshealthsync.service.AuthorizationService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -44,10 +46,14 @@ public class AuthenticationController {
         return ResponseEntity.ok(new LoginResponseDto(token));
     }
 
-    @GetMapping
-    public ResponseEntity<List<UserAuthModel>> getAllSolicitacao() {
-        return ResponseEntity.status(HttpStatus.OK).body(authorizationService.findAll());
+
+    @GetMapping("/registered-users")
+    public ResponseEntity<Page<UserAuthModel>> getRegisteredUsers(Pageable pageable) {
+        Page<UserAuthModel> registeredUsers = authorizationService.findAll(pageable);
+
+        return ResponseEntity.ok(registeredUsers);
     }
+
 
     @PostMapping("/register")
     public ResponseEntity register(@RequestBody @Valid RegisterDto data){
